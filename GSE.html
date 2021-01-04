@@ -1,0 +1,40 @@
+<html>
+
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+    th {
+    text-align: left;
+    }
+    </style>
+
+    <body bgcolor="Purple">
+    <form method="POST" action="/">
+        <center>
+        <H1>GIANT SPIDER ENCOUNTERS</H1> <br>
+        
+        <table>
+            <th>Location</th>
+            <th>NonPlayer</th>
+            <th>Enemy</th>
+            <th>Item</th>
+            </tr>
+        {% for item in data %}
+            <tr>
+            <td>{{item[0]}}</td>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+
+        <br>
+
+        <input type = "submit" name="submit" value="Back">
+        
+        </center>
+    </form>
+</body>
+</htmlL>

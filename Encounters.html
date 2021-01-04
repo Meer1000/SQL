@@ -1,0 +1,35 @@
+<HTML>
+    <BODY bgcolor="purple">
+    <form method="POST" action="/Encounters">
+        <center>
+        <H1>Change Inventory</H1> <br>
+        <H1>Add item</H1> <br>
+        Location <select name= Location>
+            {% for items in Location %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        NonPlayer <select name= NonPlayer>
+            {% for items in NonPlayer %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        Enemy <select name= Enemies>
+            {% for items in Enemies %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        Item <select name= Item>
+            {% for items in Item %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        <input type = "submit" name="submit" value="Procceed">
+		</center>
+    </form>
+    </BODY>
+    </HTML>

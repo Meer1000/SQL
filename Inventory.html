@@ -1,0 +1,31 @@
+<HTML>
+    <BODY bgcolor="purple">
+    <form method="POST" action="/">
+        <center>
+        <H1>Change Inventory</H1> <br>
+        <H1>Add item</H1> <br>
+        Player <select name= Player>
+            {% for items in Player %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        Item <select name= item>
+            {% for items in Item %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+                {% endfor %}
+                </select>
+                <br>
+
+        <input type = "submit" name="submit" value="Add item">
+        <H1>Remove item</H1> <br>
+        Player <select name= Player>
+            {% for items in Player %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+        <input type = "submit" name="submit" value="Procceed">
+		</center>
+    </form>
+    </BODY>
+    </HTML>

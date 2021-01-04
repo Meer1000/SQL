@@ -1,0 +1,47 @@
+<HTML>
+    <BODY bgcolor="purple">
+    <form method="POST" action="/owner">
+        <center>
+        <H1>Characters</H1> <br>
+		
+        Fullname <input type = "text" name= "FullName" /> <br>
+        Race <select name= Race>
+            {% for items in Race %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        Class <select name= Class>
+            {% for items in Class %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select> 
+            <br>
+		Alignent <select name= Alignment>
+            {% for items in Alignment %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select> 
+            <br>
+        Level <input type = "number" name= "Level" /> <br>
+        Strength <input type = "number" name= "Strength" /> <br>
+		Brawn <input type = "number" name= "Brawn" /> <br>
+		Agility <input type = "number" name= "Agility" /> <br>
+        Mettle <input type = "number" name= "Mettle" /> <br>
+        Craft <input type = "number" name= "Craft" /> <br>
+        Insight <input type = "number" name= "Insight" /> <br>
+		Resolve <input type = "number" name= "Resolve" /> <br>
+		Life <input type = "number" name= "Life" /> <br>
+        Armour <select name= Armour>
+            {% for items in Armour %}
+            <option value=”{{items[0]}}”>{{items[1]}}</option>
+            {% endfor %}
+            </select>
+            <br>
+        Age <input type = "number" name= "Age" /> <br>
+        <input type = "submit" name="submit" value="Add owner">
+        <input type = "submit" name="cancel" value="Cancel">
+        </center>
+    </form>
+    </BODY>
+    </HTML>
