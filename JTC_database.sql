@@ -1,0 +1,1 @@
+SELECT * FROM journey_to_cariryn.encounter WHERE EnemyID = 8
